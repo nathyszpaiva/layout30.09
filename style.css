@@ -1,0 +1,297 @@
+/* ===============================
+   RESET E ESTILOS GERAIS
+   =============================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    transition: all 0.3s ease;
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+    min-height: 100vh;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+nav {
+    background-color: white;
+    border: 3px solid black;
+    box-shadow: 6px 6px 3px rgba(0,0,0,0.2);
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    display: inline-block;
+    color: #333;
+    padding: 20px 10px;
+}
+
+/* ===============================
+   LAYOUT INDEX
+   =============================== */
+body.paginaIndex main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 2px solid rgb(18, 63, 12);
+    box-shadow: 6px 6px 3px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    background-image: url('https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=2070&auto=format&fit=crop');
+    background-size: cover;
+    filter: grayscale(100%);
+}
+
+body.paginaIndex main:hover {
+    cursor: pointer;
+    box-shadow: none;
+    filter: grayscale(0%);
+    transform: scale(.99);
+}
+
+/* ===============================
+   LAYOUT 1
+   =============================== */
+body.pagina1 main {
+    flex: 1;
+    display: flex;
+    gap: 15px;
+}
+
+body.pagina1 section {
+    flex: 1;
+    background-color: white;
+    border: 3px solid black;
+    box-shadow: 6px 6px 3px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+body.pagina1 header,
+body.pagina1 footer {
+    min-height: 100px;
+    background-color: white;
+    border: 3px solid black;
+    box-shadow: 6px 6px 3px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+body.pagina1 header:hover,
+body.pagina1 footer:hover,
+body.pagina1 section:hover {
+    cursor: pointer;
+    box-shadow: none;
+    background-color: rgb(226,226,226);
+}
+
+/* ===============================
+   LAYOUT 2
+   =============================== */
+body.pagina2 header, 
+body.pagina2 main, 
+body.pagina2 footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 3px solid black;
+    box-shadow: 6px 6px 3px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+body.pagina2 header, 
+body.pagina2 footer {
+    flex: 1;
+}
+
+body.pagina2 main {
+    flex: 2;
+}
+
+body.pagina2 header:hover, 
+body.pagina2 main:hover, 
+body.pagina2 footer:hover {
+    cursor: pointer;
+    box-shadow: none;
+    background-color: rgb(226,226,226);
+}
+
+/* ===============================
+   LAYOUT 3
+   =============================== */
+body.pagina3 header, 
+body.pagina3 main, 
+body.pagina3 footer {
+    flex: 1;
+    display: flex;
+    gap: 15px;
+}
+
+body.pagina3 header section, 
+body.pagina3 main section, 
+body.pagina3 footer section {
+    flex: 1;
+    background-color: white;
+    border: 3px solid black;
+    box-shadow: 6px 6px 3px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80px;
+    transition: all 0.3s ease;
+}
+
+body.pagina3 section:hover {
+    cursor: pointer;
+    box-shadow: none;
+    background-color: rgb(226,226,226);
+}
+
+/* ===============================
+   LAYOUT 4
+   =============================== */
+body.pagina4 header {
+    min-height: 100px;
+    background-color: white;
+    border: 3px solid black;
+    box-shadow: 6px 6px 3px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+body.pagina4 main, 
+body.pagina4 footer {
+    flex: 1;
+    display: flex;
+    gap: 15px;
+}
+
+body.pagina4 main section, 
+body.pagina4 footer section {
+    flex: 1;
+    background-color: white;
+    border: 3px solid black;
+    box-shadow: 6px 6px 3px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    transition: all 0.3s ease;
+}
+
+body.pagina4 header:hover, 
+body.pagina4 section:hover, 
+body.pagina4 footer section:hover {
+    cursor: pointer;
+    box-shadow: none;
+    background-color: rgb(226,226,226);
+}
+
+/* ===============================
+   LAYOUT 5
+   =============================== */
+body.pagina5 header, 
+body.pagina5 main, 
+body.pagina5 footer {
+    flex: 1;
+}
+
+body.pagina5 header, 
+body.pagina5 footer {
+    display: flex;
+    gap: 15px;
+}
+
+body.pagina5 header section, 
+body.pagina5 footer section {
+    flex: 1;
+}
+
+body.pagina5 .secao-maior {
+    flex: 2;
+}
+
+body.pagina5 main, 
+body.pagina5 section {
+    background-color: white;
+    border: 3px solid black;
+    box-shadow: 6px 6px 3px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80px;
+    transition: all 0.3s ease;
+}
+
+body.pagina5 main:hover, 
+body.pagina5 section:hover {
+    cursor: pointer;
+    box-shadow: none;
+    background-color: rgb(226,226,226);
+}
+
+/* ===============================
+   LAYOUT 6
+   =============================== */
+body.pagina6 main {
+    flex: 1;
+    display: flex;
+    gap: 15px;
+}
+
+body.pagina6 main section {
+    flex: 1;
+    background-color: white;
+    border: 3px solid black;
+    box-shadow: 6px 6px 3px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    transition: all 0.3s ease;
+}
+
+body.pagina6 header, 
+body.pagina6 section, 
+body.pagina6 footer section {
+    min-height: 100px;
+    background-color: white;
+    border: 3px solid black;
+    box-shadow: 6px 6px 3px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+body.pagina6 header:hover, 
+body.pagina6 section:hover, 
+body.pagina6 footer section:hover {
+    cursor: pointer;
+    box-shadow: none;
+    background-color: rgb(226,226,226);
+}
